@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <h1 id="title">Hawk Digital Feedback Form</h1>
+  <p id="description">Tell us how your experience was with us and how we can improve our services</p>
+</head>
+
+<body>
+<form id="survey-form">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label id="name-label" for="First Name">First Name:</label>
+  <input required placeholder="First name" type="text" id="name" name="First Name" size="30"><br><br>
+  <label id="name-label" for="Last name">Last Name:</label>
+  <input required placeholder="Last name" type="text" id="name" name="Last name" size="30"><br><br>
+  <label id="email-label" for="email">Email:</label>
+  <input required placeholder="Email address" type="email" id="email" name="email"><br><br>
+  <label for="dropdown">Gender:</label>
+  <select id="dropdown">
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Order Information</legend>
+    <label id="number-label" for="number">Number of orders:</label>
+  <input Placeholder="Orders"  type="number" name="number" id="number" min="1" max="999"size="20"><br><br>
+
+  <label for="delivery-type">Delivery type:</label>
+  <input checked type="radio" name="delivery-type" value="delivery-type"> Courier-service
+  <input type="radio" name="delivery-type" value="delivery-type"> Self-pickup service <br><br>
+  
+  <p>What type of photos did you order?</p>
+  <input checked type="checkbox" id="order-type" name="order-type" value="Digital-copy">
+  <label for="order-type">Digital Copy</label>
+  <input type="checkbox" id="order-type" name="order-type" value="physical-copy">
+  <label for="order-type">Physical Copy</label><br><br>
+  <textarea placeholder="Additional details"></textarea>
+
+  </fieldset>
+  <br>
+
+  <input type="submit" id="submit">
+  </form>
+
+</body>
+
+</html>
